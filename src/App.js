@@ -2,7 +2,7 @@ import './css/main.css';
 
 //Components
 import Header from './components/Header';
-import Card from './components/Card';
+import Cards from './components/Cards';
 import Dropdown from './components/Dropdown';
 import Chart from './components/Chart';
 import Footer from './components/Footer';
@@ -12,10 +12,7 @@ function App() {
     <div className="container">
       <Header />
       <div className="card-box">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Cards />
       </div>
       <section>
         <Dropdown />
