@@ -1,15 +1,30 @@
-import React from 'react';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchCountries } from '../redux/covidSlice/covidSlice';
 
 function Dropdown() {
+  const dispatch = useDispatch();
+
+  const countries = useSelector((state) => state.covid.countries);
+
+  useEffect(() => {
+    dispatch(fetchCountries());
+  }, [dispatch]);
+
+  console.log(countries);
+
   return (
     <div>
       <label>
         <select
-        // value={value} onChange={handleChange}
+        // value={countries} onChange={handleChange}
         >
-          <option value="fruit">Fruit</option>
-          <option value="vegetable">Vegetable</option>
-          <option value="meat">Meat</option>
+          <option value="global">Global</option>
+          {countries?.map((country, i) => (
+            <option key={i} value={country.iso2}>
+              {country.name}
+            </option>
+          ))}
         </select>
       </label>
     </div>
