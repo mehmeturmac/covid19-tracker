@@ -85,6 +85,16 @@ select {
   margin-bottom: 15px;
 }
 
+/* Footer */
+footer {
+  background-color: $color5;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 5px 5px 0 0;
+  position: fixed;
+  bottom: 0;
+}
+
 @media (max-width: $tablet) {
   section {
     width: 100%;

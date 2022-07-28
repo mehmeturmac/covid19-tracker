@@ -70,6 +70,15 @@ select {
   border-radius: 5px;
   margin-bottom: 15px; }
 
+/* Footer */
+footer {
+  background-color: #e9c46a;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 5px 5px 0 0;
+  position: fixed;
+  bottom: 0; }
+
 @media (max-width: 768px) {
   section {
     width: 100%; } }
