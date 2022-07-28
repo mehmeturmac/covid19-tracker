@@ -1,7 +1,15 @@
 import React from 'react';
 
 function Footer() {
-  return <div>Coded by Mehmet Urmaç</div>;
+  return (
+    <footer>
+      <div>
+        <a target="blank" href="https://github.com/mehmeturmac">
+          Coded by Mehmet Urmaç
+        </a>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

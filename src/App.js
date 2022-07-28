@@ -11,9 +11,7 @@ function App() {
   return (
     <div className="container">
       <Header />
-      <div className="card-box">
-        <Cards />
-      </div>
+      <Cards />
       <section>
         <Dropdown />
         <Chart />
