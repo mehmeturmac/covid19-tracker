@@ -4,7 +4,7 @@
 
 ![covid19tracker](img/covid.png)
 
-## Used API and Modules
+## API and Modules Used
 
 - [mathdro.id/api](https://covid19.mathdro.id/api)
 
