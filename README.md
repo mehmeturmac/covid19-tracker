@@ -1,6 +1,6 @@
 # Covid19 Tracker
 
-> Link
+> https://covid-tracker-mu.netlify.app/
 
 ![covid19tracker](img/covid.png)
 
