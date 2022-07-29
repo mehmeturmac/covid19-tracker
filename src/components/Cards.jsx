@@ -9,15 +9,15 @@ function Cards() {
       <div className="card-box">
         <div className="card">
           <p className="title">Infected</p>
-          <p>{data && data.confirmed.value}</p>
+          <p>{data && new Intl.NumberFormat('en-US').format(data.confirmed.value)}</p>
         </div>
         <div className="card">
-          <p className="title">Recovered</p>
-          <p>{data && data.recovered.value}</p>
+          <p className="title">Active</p>
+          <p>{data && new Intl.NumberFormat('en-US').format(data.confirmed.value - data.deaths.value)}</p>
         </div>
         <div className="card">
           <p className="title">Deaths</p>
-          <p>{data && data.deaths.value}</p>
+          <p>{data && new Intl.NumberFormat('en-US').format(data.deaths.value)}</p>
         </div>
       </div>
       <div className="card-info">
